@@ -103,6 +103,16 @@ export const rows: { title: string; items: Memory[] }[] = [
       { id: "fu3", title: "16 June", date: "Anniversary", description: "The day everything became us.", image: photos.bouquetSmile, category: "Original" },
     ],
   },
+  {
+    title: "New Releases",
+    items: [
+      { id: "nr1", title: "Hoodie Hug", date: "Tuesday", description: "Two hoodies, one heartbeat.", image: photos.hoodieHug, category: "New" },
+      { id: "nr2", title: "Time Stops", date: "2:21 PM", description: "His watch, her giggle, sunlight through trees.", image: photos.hoodieWatch, category: "New" },
+      { id: "nr3", title: "Heart Filter", date: "Library Day", description: "Pink hearts couldn't compete with hers.", image: photos.heartFilter, category: "New" },
+      { id: "nr4", title: "Arcade Mirror", date: "Cafe Run", description: "Neon walls, mirror selfie, manga case.", image: photos.arcadeMirror, category: "New" },
+      { id: "nr5", title: "Pink Scarf", date: "Winter Morning", description: "Foggy skies and her warmest smile.", image: photos.scarfSmile, category: "New" },
+    ],
+  },
 ];
 
 export const timeline = [
