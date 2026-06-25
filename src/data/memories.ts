@@ -8,6 +8,11 @@ import img7 from "@/assets/memories/IMG_20260623_213407_784.jpg.asset.json";
 import img8 from "@/assets/memories/IMG_20260623_213421_697.jpg.asset.json";
 import img9 from "@/assets/memories/IMG_20260623_213448_395.jpg.asset.json";
 import img10 from "@/assets/memories/IMG_20260623_213727_081.jpg.asset.json";
+import img11 from "@/assets/IMG_20260623_213815_343.jpg.asset.json";
+import img12 from "@/assets/IMG_20260623_213823_451.jpg.asset.json";
+import img13 from "@/assets/IMG_20260623_213841_096.jpg.asset.json";
+import img14 from "@/assets/IMG_20260623_213849_525.jpg.asset.json";
+import img15 from "@/assets/IMG_20260623_213919_650.jpg.asset.json";
 
 export const photos = {
   garden: img1.url,
@@ -20,6 +25,11 @@ export const photos = {
   candySelfie: img8.url,
   matchingDay: img9.url,
   cafeTeal: img10.url,
+  hoodieHug: img11.url,
+  hoodieWatch: img12.url,
+  heartFilter: img13.url,
+  arcadeMirror: img14.url,
+  scarfSmile: img15.url,
 };
 
 export const all = Object.values(photos);
@@ -91,6 +101,16 @@ export const rows: { title: string; items: Memory[] }[] = [
       { id: "fu1", title: "Our Story", date: "Since 2019", description: "Best friends to lovers. Forever streaming.", image: photos.garden, category: "Original" },
       { id: "fu2", title: "Just Us", date: "Always", description: "No filter needed.", image: photos.cafeTeal, category: "Original" },
       { id: "fu3", title: "16 June", date: "Anniversary", description: "The day everything became us.", image: photos.bouquetSmile, category: "Original" },
+    ],
+  },
+  {
+    title: "New Releases",
+    items: [
+      { id: "nr1", title: "Hoodie Hug", date: "Tuesday", description: "Two hoodies, one heartbeat.", image: photos.hoodieHug, category: "New" },
+      { id: "nr2", title: "Time Stops", date: "2:21 PM", description: "His watch, her giggle, sunlight through trees.", image: photos.hoodieWatch, category: "New" },
+      { id: "nr3", title: "Heart Filter", date: "Library Day", description: "Pink hearts couldn't compete with hers.", image: photos.heartFilter, category: "New" },
+      { id: "nr4", title: "Arcade Mirror", date: "Cafe Run", description: "Neon walls, mirror selfie, manga case.", image: photos.arcadeMirror, category: "New" },
+      { id: "nr5", title: "Pink Scarf", date: "Winter Morning", description: "Foggy skies and her warmest smile.", image: photos.scarfSmile, category: "New" },
     ],
   },
 ];
