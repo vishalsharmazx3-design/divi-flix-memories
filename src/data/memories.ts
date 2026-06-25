@@ -13,10 +13,20 @@ import img12 from "@/assets/IMG_20260623_213823_451.jpg.asset.json";
 import img13 from "@/assets/IMG_20260623_213841_096.jpg.asset.json";
 import img14 from "@/assets/IMG_20260623_213849_525.jpg.asset.json";
 import img15 from "@/assets/IMG_20260623_213919_650.jpg.asset.json";
+import nCoupleGlasses from "@/assets/new/couple_glasses.jpg.asset.json";
+import nTrioIntro from "@/assets/new/trio_intro.jpg.asset.json";
+import nDressBrown from "@/assets/new/dress_brown.jpg.asset.json";
+import nMirrorYellow from "@/assets/new/mirror_yellow.jpg.asset.json";
+import nHairTilt from "@/assets/new/hair_tilt.jpg.asset.json";
+import nBlackSmile from "@/assets/new/black_smile.jpg.asset.json";
+import nHugBack from "@/assets/new/hug_back.jpg.asset.json";
+import nRedFlowers from "@/assets/new/red_flowers.jpg.asset.json";
 import vid1 from "@/assets/videos/VID_20260623_213146_115_1.mp4.asset.json";
 import vid2 from "@/assets/videos/VID_20260623_213207_651_1.mp4.asset.json";
 import vid3 from "@/assets/videos/VID_20260623_213349_267_1.mp4.asset.json";
 import vid4 from "@/assets/videos/VID_20260623_213417_715.mp4.asset.json";
+import vBestFriend from "@/assets/videos/bestfriend_era.mp4.asset.json";
+import vTheDay from "@/assets/videos/the_day.mp4.asset.json";
 
 export const photos = {
   garden: img1.url,
@@ -34,6 +44,19 @@ export const photos = {
   heartFilter: img13.url,
   arcadeMirror: img14.url,
   scarfSmile: img15.url,
+  coupleGlasses: nCoupleGlasses.url,
+  trioIntro: nTrioIntro.url,
+  dressBrown: nDressBrown.url,
+  mirrorYellow: nMirrorYellow.url,
+  hairTilt: nHairTilt.url,
+  blackSmile: nBlackSmile.url,
+  hugBack: nHugBack.url,
+  redFlowers: nRedFlowers.url,
+};
+
+export const videos = {
+  bestFriend: vBestFriend.url,
+  theDay: vTheDay.url,
 };
 
 export const previews = [
@@ -52,16 +75,17 @@ export type Memory = {
   description: string;
   image: string;
   category: string;
+  video?: string;
 };
 
 export const episodes: Memory[] = [
-  { id: "ep1", title: "The Girl I Couldn't Ignore", date: "S1:E1 • 2019", description: "In 2019, a boy notices a girl who would unknowingly change his life forever.", image: photos.garden, category: "Episode" },
-  { id: "ep2", title: "A Random Introduction", date: "S1:E2 • 2019", description: "One unexpected introduction from Priya creates the first connection.", image: photos.bigBazaar, category: "Episode" },
-  { id: "ep3", title: "The Best Friend Era", date: "S1:E3", description: "A year of friendship, trust and silent love.", image: photos.candySelfie, category: "Episode" },
+  { id: "ep1", title: "The Girl I Couldn't Ignore", date: "S1:E1 • 2019", description: "In 2019, a boy notices a girl who would unknowingly change his life forever.", image: photos.coupleGlasses, category: "Episode" },
+  { id: "ep2", title: "A Random Introduction", date: "S1:E2 • 2019", description: "One unexpected introduction from Priya creates the first connection.", image: photos.trioIntro, category: "Episode" },
+  { id: "ep3", title: "The Best Friend Era", date: "S1:E3", description: "A year of friendship, trust and silent love.", image: photos.candySelfie, category: "Episode", video: vBestFriend.url },
   { id: "ep4", title: "When Everything Changed", date: "S1:E4", description: "A heartbreak changes everything and brings two hearts closer.", image: photos.matchingDay, category: "Episode" },
   { id: "ep5", title: "The Beginning Of Us", date: "S1:E5", description: "The friendship slowly becomes love.", image: photos.templeSelfie, category: "Episode" },
-  { id: "ep6", title: "16 June 2019 ❤️", date: "S1:E6 • 16.06.2019", description: "The day our story officially began.", image: photos.bouquetSmile, category: "Episode" },
-  { id: "ep7", title: "Still Streaming", date: "S1:E7 • Now", description: "The journey continues and the best episodes are yet to come.", image: photos.cafeTeal, category: "Episode" },
+  { id: "ep6", title: "16 June 2019 ❤️", date: "S1:E6 • 16.06.2019", description: "The day our story officially began.", image: photos.coupleGlasses, category: "Episode", video: vTheDay.url },
+  { id: "ep7", title: "Still Streaming", date: "S1:E7 • Now", description: "The journey continues and the best episodes are yet to come.", image: photos.dressBrown, category: "Episode" },
 ];
 
 export const rows: { title: string; items: Memory[] }[] = [
@@ -124,17 +148,27 @@ export const rows: { title: string; items: Memory[] }[] = [
       { id: "nr5", title: "Pink Scarf", date: "Winter Morning", description: "Foggy skies and her warmest smile.", image: photos.scarfSmile, category: "New" },
     ],
   },
+  {
+    title: "Just Dropped",
+    items: [
+      { id: "jd1", title: "Mirror, Sunshine", date: "Thursday", description: "Yellow florals, a quiet smile, our reflection.", image: nMirrorYellow.url, category: "Aesthetic" },
+      { id: "jd2", title: "Soft Light", date: "Golden Hour", description: "Her hair, his stare, the calmest frame.", image: nHairTilt.url, category: "Aesthetic" },
+      { id: "jd3", title: "Black On Black", date: "Tuesday Night", description: "Matching mood, biggest laugh.", image: nBlackSmile.url, category: "Aesthetic" },
+      { id: "jd4", title: "Hug From Behind", date: "Same Night", description: "Held close, smiling wider than the room.", image: nHugBack.url, category: "Aesthetic" },
+      { id: "jd5", title: "Red Flowers", date: "Thursday 17:22", description: "Wall flowers, our finger-on-lips secret.", image: nRedFlowers.url, category: "Aesthetic" },
+    ],
+  },
 ];
 
-export const timeline = [
-  { year: "2019", title: "First Saw Her", text: "A glance that wouldn't leave his mind.", image: photos.garden },
-  { year: "2019", title: "Priya Introduced Us", text: "A small hello. A massive beginning.", image: photos.bigBazaar },
-  { year: "2019-20", title: "Best Friend Phase", text: "Late night calls, silent love.", image: photos.candySelfie },
+export const timeline: { year: string; title: string; text: string; image: string; video?: string }[] = [
+  { year: "2019", title: "First Saw Her", text: "A glance that wouldn't leave his mind.", image: photos.coupleGlasses },
+  { year: "2019", title: "Priya Introduced Us", text: "A small hello. A massive beginning.", image: photos.trioIntro },
+  { year: "2019-20", title: "Best Friend Phase", text: "Late night calls, silent love.", image: photos.candySelfie, video: vBestFriend.url },
   { year: "2020", title: "Her Breakup", text: "Hearts heal closer than apart.", image: photos.matchingDay },
   { year: "2020", title: "Dating Phase", text: "Friendship blooming into love.", image: photos.templeSelfie },
-  { year: "16.06.2019", title: "The Day", text: "Our story officially began.", image: photos.bouquetSmile },
+  { year: "16.06.2019", title: "The Day", text: "Our story officially began.", image: photos.bouquetSmile, video: vTheDay.url },
   { year: "Trips", title: "Adventures", text: "Scooter rides, temples, gardens.", image: photos.helmetThumbs },
-  { year: "Now", title: "Present Day", text: "Still streaming. Best is yet to come.", image: photos.cafeTeal },
+  { year: "Now", title: "Present Day", text: "Still streaming. Best is yet to come.", image: photos.dressBrown },
 ];
 
 export const profiles = [
