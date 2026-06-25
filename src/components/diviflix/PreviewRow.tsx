@@ -23,7 +23,7 @@ function PreviewCard({ p }: { p: (typeof previews)[number] }) {
       }}
       whileHover={{ scale: 1.05, zIndex: 20 }}
       transition={{ type: "spring", stiffness: 300, damping: 25 }}
-      className="relative aspect-video w-[280px] md:w-[360px] shrink-0 overflow-hidden rounded-md ring-1 ring-white/10 bg-neutral-900 cursor-pointer group"
+      className="relative aspect-video w-[340px] md:w-[460px] shrink-0 overflow-hidden rounded-lg ring-1 ring-white/10 bg-neutral-900 cursor-pointer group"
     >
       <video
         ref={ref}
