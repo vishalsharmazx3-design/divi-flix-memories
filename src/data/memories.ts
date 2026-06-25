@@ -13,6 +13,10 @@ import img12 from "@/assets/IMG_20260623_213823_451.jpg.asset.json";
 import img13 from "@/assets/IMG_20260623_213841_096.jpg.asset.json";
 import img14 from "@/assets/IMG_20260623_213849_525.jpg.asset.json";
 import img15 from "@/assets/IMG_20260623_213919_650.jpg.asset.json";
+import vid1 from "@/assets/videos/VID_20260623_213146_115_1.mp4.asset.json";
+import vid2 from "@/assets/videos/VID_20260623_213207_651_1.mp4.asset.json";
+import vid3 from "@/assets/videos/VID_20260623_213349_267_1.mp4.asset.json";
+import vid4 from "@/assets/videos/VID_20260623_213417_715.mp4.asset.json";
 
 export const photos = {
   garden: img1.url,
@@ -31,6 +35,13 @@ export const photos = {
   arcadeMirror: img14.url,
   scarfSmile: img15.url,
 };
+
+export const previews = [
+  { id: "pv1", title: "Official Teaser", label: "S1 • Teaser", url: vid1.url, poster: photos.garden },
+  { id: "pv2", title: "Behind The Smile", label: "Featurette", url: vid2.url, poster: photos.bouquetSmile },
+  { id: "pv3", title: "Best Friends Era", label: "Recap", url: vid3.url, poster: photos.candySelfie },
+  { id: "pv4", title: "Forever Trailer", label: "S1 • Trailer", url: vid4.url, poster: photos.cafeTeal },
+];
 
 export const all = Object.values(photos);
 
