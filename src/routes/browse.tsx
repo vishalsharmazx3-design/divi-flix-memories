@@ -97,8 +97,17 @@ function Browse() {
                     <p className="mt-2 text-neutral-400">{t.text}</p>
                   </div>
                   <div className="pl-12 md:pl-0">
-                    <div className="aspect-video overflow-hidden rounded-lg ring-1 ring-white/10">
-                      <img src={t.image} alt={t.title} className="h-full w-full object-cover" />
+                    <div className="relative mx-auto w-full max-w-sm aspect-[4/5] overflow-hidden rounded-lg ring-1 ring-white/10 bg-neutral-900">
+                      <div
+                        aria-hidden
+                        className="absolute inset-0 scale-110 blur-2xl opacity-40"
+                        style={{ backgroundImage: `url(${t.image})`, backgroundSize: "cover", backgroundPosition: "center" }}
+                      />
+                      <img
+                        src={t.image}
+                        alt={t.title}
+                        className="relative h-full w-full object-contain"
+                      />
                     </div>
                   </div>
                   <span className="absolute left-2 md:left-1/2 top-2 h-4 w-4 -translate-x-1/2 rounded-full bg-[#E50914] ring-4 ring-black" />
