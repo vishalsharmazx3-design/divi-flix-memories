@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Divi's Flix" },
+      { name: "description", content: "Its our Flix" },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Divi's Flix" },
+      { property: "og:description", content: "Its our Flix" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Divi's Flix" },
+      { name: "twitter:description", content: "Its our Flix" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ab89b02f-6ae8-4a0a-a5b1-770382ded03f/id-preview-0bddea34--e1ee4a21-3445-437a-af84-0a7b66ab92ca.lovable.app-1782395616893.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ab89b02f-6ae8-4a0a-a5b1-770382ded03f/id-preview-0bddea34--e1ee4a21-3445-437a-af84-0a7b66ab92ca.lovable.app-1782395616893.png" },
     ],
     links: [
       {
