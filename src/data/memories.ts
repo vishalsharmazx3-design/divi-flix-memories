@@ -8,6 +8,11 @@ import img7 from "@/assets/memories/IMG_20260623_213407_784.jpg.asset.json";
 import img8 from "@/assets/memories/IMG_20260623_213421_697.jpg.asset.json";
 import img9 from "@/assets/memories/IMG_20260623_213448_395.jpg.asset.json";
 import img10 from "@/assets/memories/IMG_20260623_213727_081.jpg.asset.json";
+import img11 from "@/assets/IMG_20260623_213815_343.jpg.asset.json";
+import img12 from "@/assets/IMG_20260623_213823_451.jpg.asset.json";
+import img13 from "@/assets/IMG_20260623_213841_096.jpg.asset.json";
+import img14 from "@/assets/IMG_20260623_213849_525.jpg.asset.json";
+import img15 from "@/assets/IMG_20260623_213919_650.jpg.asset.json";
 
 export const photos = {
   garden: img1.url,
@@ -20,6 +25,11 @@ export const photos = {
   candySelfie: img8.url,
   matchingDay: img9.url,
   cafeTeal: img10.url,
+  hoodieHug: img11.url,
+  hoodieWatch: img12.url,
+  heartFilter: img13.url,
+  arcadeMirror: img14.url,
+  scarfSmile: img15.url,
 };
 
 export const all = Object.values(photos);
