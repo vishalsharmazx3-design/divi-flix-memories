@@ -5,6 +5,7 @@ import { z } from "zod";
 import { Navbar } from "@/components/diviflix/Navbar";
 import { Hero } from "@/components/diviflix/Hero";
 import { Row } from "@/components/diviflix/Row";
+import { PreviewRow } from "@/components/diviflix/PreviewRow";
 import { MemoryCard } from "@/components/diviflix/MemoryCard";
 import { MemoryModal } from "@/components/diviflix/MemoryModal";
 import { episodes, rows, timeline, type Memory } from "@/data/memories";
@@ -36,6 +37,7 @@ function Browse() {
 
       <div className="relative z-20 -mt-32 space-y-2 pb-20">
         <Row title="Continue Watching" items={rows[0].items} onOpen={setOpen} />
+        <PreviewRow />
 
         <section id="episodes" className="px-4 md:px-12 py-10">
           <div className="mb-6 flex items-end justify-between">
