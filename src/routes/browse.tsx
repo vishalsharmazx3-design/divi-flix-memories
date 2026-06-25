@@ -57,8 +57,13 @@ function Browse() {
                 className="grid w-full grid-cols-[40px_180px_1fr] md:grid-cols-[60px_240px_1fr] items-center gap-4 p-4 text-left"
               >
                 <div className="text-2xl md:text-3xl font-light text-neutral-500">{i + 1}</div>
-                <div className="relative aspect-video overflow-hidden rounded-md">
-                  <img src={ep.image} alt={ep.title} className="h-full w-full object-cover" />
+                <div className="relative aspect-video overflow-hidden rounded-md bg-neutral-900">
+                  <div
+                    aria-hidden
+                    className="absolute inset-0 scale-110 blur-2xl opacity-50"
+                    style={{ backgroundImage: `url(${ep.image})`, backgroundSize: "cover", backgroundPosition: "center" }}
+                  />
+                  <img src={ep.image} alt={ep.title} className="relative h-full w-full object-contain" />
                 </div>
                 <div>
                   <div className="flex items-center justify-between gap-3">
@@ -103,11 +108,22 @@ function Browse() {
                         className="absolute inset-0 scale-110 blur-2xl opacity-40"
                         style={{ backgroundImage: `url(${t.image})`, backgroundSize: "cover", backgroundPosition: "center" }}
                       />
-                      <img
-                        src={t.image}
-                        alt={t.title}
-                        className="relative h-full w-full object-contain"
-                      />
+                      {t.video ? (
+                        <video
+                          src={t.video}
+                          poster={t.image}
+                          controls
+                          playsInline
+                          preload="metadata"
+                          className="relative h-full w-full object-contain bg-black"
+                        />
+                      ) : (
+                        <img
+                          src={t.image}
+                          alt={t.title}
+                          className="relative h-full w-full object-contain"
+                        />
+                      )}
                     </div>
                   </div>
                   <span className="absolute left-2 md:left-1/2 top-2 h-4 w-4 -translate-x-1/2 rounded-full bg-[#E50914] ring-4 ring-black" />
@@ -122,7 +138,7 @@ function Browse() {
             <div className="text-xs font-bold tracking-[0.3em] text-[#E50914]">DIVIFLIX EXCLUSIVE</div>
             <h2 className="mt-2 text-4xl md:text-6xl font-black" style={{ fontFamily: "'Bebas Neue', Impact, sans-serif" }}>Forever Note</h2>
             <div className="mt-8 whitespace-pre-line text-lg leading-relaxed text-neutral-100" style={{ fontFamily: "'Caveat', 'Inter', cursive" }}>
-{`Dear Devanshi,
+{`Dear Divi,
 
 You were the best thing that ever happened to me. From the first day I saw you in 2019, something in me knew — this girl is the rest of my life.
 
@@ -137,7 +153,7 @@ Vishal ❤️`}
         </section>
 
         <footer className="px-4 md:px-12 py-10 text-center text-xs text-neutral-600">
-          A DiviFlix Original • Streaming since 16.06.2019 • Made with ❤ for Devanshi
+          A DiviFlix Original • Streaming since 16.06.2019 • Made with ❤ for Divi
         </footer>
       </div>
 
