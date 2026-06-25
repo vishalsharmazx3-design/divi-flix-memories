@@ -98,15 +98,15 @@ function Browse() {
                   </div>
                   <div className="pl-12 md:pl-0">
                     <div className="relative mx-auto w-full max-w-sm aspect-[4/5] overflow-hidden rounded-lg ring-1 ring-white/10 bg-neutral-900">
+                      <div
+                        aria-hidden
+                        className="absolute inset-0 scale-110 blur-2xl opacity-40"
+                        style={{ backgroundImage: `url(${t.image})`, backgroundSize: "cover", backgroundPosition: "center" }}
+                      />
                       <img
                         src={t.image}
                         alt={t.title}
-                        className="absolute inset-0 h-full w-full object-contain"
-                      />
-                      <div
-                        aria-hidden
-                        className="absolute inset-0 -z-10 scale-110 blur-2xl opacity-40"
-                        style={{ backgroundImage: `url(${t.image})`, backgroundSize: "cover", backgroundPosition: "center" }}
+                        className="relative h-full w-full object-contain"
                       />
                     </div>
                   </div>
